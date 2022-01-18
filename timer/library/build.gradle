@@ -1,0 +1,96 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'android-aspectjx'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // AOP
+    api 'org.aspectj:aspectjrt:1.9.5'
+    // 还需要手动打包
+    implementation 'com.github.tiann:epic:0.11.2'
+
+    implementation fileTree(dir: 'libs', include: ['*.aar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlin_version"
+    implementation "androidx.core:core-ktx:$rootProject.coreKtxVersion"
+    implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+
+    def life_version = "2.2.0"
+    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$life_version"
+    api "androidx.lifecycle:lifecycle-runtime-ktx:$life_version"
+    api "androidx.lifecycle:lifecycle-livedata-ktx:$life_version"
+
+    // 性能优化
+    // 启动器
+    api 'com.github.aiceking:AppStartFaster:2.0.0'
+    // UI 异步加载
+    api 'com.android.support:asynclayoutinflater:28.0.0'
+    // UI 布局转换
+    kapt 'com.zhangyue.we:x2c-apt:1.1.2'
+    api 'com.zhangyue.we:x2c-lib:1.0.6'
+    // ANR
+    implementation 'com.github.anrwatchdog:anrwatchdog:1.4.0'
+
+    // 腾讯开源库
+//    implementation group: "com.tencent.matrix", name: "matrix-android-lib", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-android-commons", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-trace-canary", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-resource-canary-android", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-resource-canary-common", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-io-canary", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-sqlite-lint-android-sdk", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-battery-canary", version: MATRIX_VERSION, changing: true
+//    implementation group: "com.tencent.matrix", name: "matrix-hooks", version: MATRIX_VERSION, changing: true
+
+    //ARouter路由
+    implementation 'com.alibaba:arouter-api:1.5.0'
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
+
+    // Glide
+    api 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+//     内存监控-通过前缀管理依赖
+//    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+//    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+}
+
+
+
+

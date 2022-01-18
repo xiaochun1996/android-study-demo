@@ -1,0 +1,37 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@android:string/no"
+        android:minWidth="@android:dimen/app_icon_size"
+        android:minHeight="12dp"
+        android:scaleType="centerCrop"
+        android:src="?attr/selectableItemBackground"
+        android:background="@android:mipmap/sym_def_app_icon"
+        app:layout_constraintDimensionRatio="H,1024:539"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/xml"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv"
+        android:layout_height="match_parent"
+        android:layout_width="120dp" />
+
+    <TextView
+        android:id="@+id/x2c"
+        app:layout_constraintLeft_toRightOf="@id/xml"
+        app:layout_constraintTop_toTopOf="@id/xml"
+        android:layout_height="match_parent"
+        android:layout_width="120dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
