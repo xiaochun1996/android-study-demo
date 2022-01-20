@@ -29,7 +29,7 @@
         <activity android:name="com.jock.thread.ThreadTest2Activity" />
         <activity android:name="com.jock.thread.ThreadTest3Activity" />
         <activity android:name="com.jock.thread.ThreadTest4Activity" />
-
+        <activity android:name="com.jock.thread.ThreadTest5Activity" />
         <activity android:name="com.jock.thread.ThreadTest12Activity" />
         <activity android:name="com.jock.thread.CoroutinesDemoActivity2" />
     </application>
