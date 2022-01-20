@@ -2,8 +2,9 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'android-aspectjx'
-    id 'com.alibaba.arouter'
+//    id 'com.alibaba.arouter'
     id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
 }
 
 android {
@@ -53,9 +54,11 @@ android {
 dependencies {
     api 'org.aspectj:aspectjrt:1.9.5'
 
-    //arouter路由
+    //ARouter路由
     implementation 'com.alibaba:arouter-api:1.5.0'
+    implementation project(path: ':ui')
     kapt 'com.alibaba:arouter-compiler:1.2.2'
+
     implementation project(':library')
 
 
@@ -63,4 +66,7 @@ dependencies {
     implementation "androidx.core:core-ktx:$rootProject.coreKtxVersion"
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintLayoutVersion"
+
+    // 协程
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
 }

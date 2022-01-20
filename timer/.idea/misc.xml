@@ -7,9 +7,23 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_inform.xml" value="0.30434782608695654" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.30434782608695654" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.38179347826086957" />
+        <entry key="app/src/main/res/layout/activity_not_found.xml" value="0.30434782608695654" />
+        <entry key="app/src/main/res/layout/activity_route_home.xml" value="0.30434782608695654" />
+        <entry key="app/src/main/res/layout/activity_thread_pool.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_thread_test.xml" value="0.3848958333333333" />
+        <entry key="app/src/main/res/layout/layout_global_degrade.xml" value="0.30434782608695654" />
         <entry key="library/src/main/res/layout/hilog_item.xml" value="0.196875" />
       </map>
     </option>
+  </component>
+  <component name="EntryPointsManager">
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="com.alibaba.android.arouter.facade.annotation.Interceptor" />
+      <item index="1" class="java.lang.String" itemvalue="com.alibaba.android.arouter.facade.annotation.Route" />
+    </list>
   </component>
   <component name="MarkdownNavigator.ProfileManager" plain-text-search-scope="Project Files" />
   <component name="MarkdownProjectSettings" wasCopied="true">

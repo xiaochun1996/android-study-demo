@@ -52,10 +52,9 @@ dependencies {
     implementation "androidx.appcompat:appcompat:$rootProject.appCompatVersion"
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
 
-    def life_version = "2.2.0"
-    api "androidx.lifecycle:lifecycle-viewmodel-ktx:$life_version"
-    api "androidx.lifecycle:lifecycle-runtime-ktx:$life_version"
-    api "androidx.lifecycle:lifecycle-livedata-ktx:$life_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.life_version"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$rootProject.life_version"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$rootProject.life_version"
 
     // 性能优化
     // 启动器
@@ -89,6 +88,9 @@ dependencies {
 //     内存监控-通过前缀管理依赖
 //    debugImplementation 'com.squareup.leakcanary:leakcanary-android:1.6.3'
 //    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.3'
+
+    // 协程
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutines"
 }
 
 
