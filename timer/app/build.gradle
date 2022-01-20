@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
-    id 'android-aspectjx'
+//    id 'android-aspectjx'
 //    id 'com.alibaba.arouter'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
@@ -50,17 +50,22 @@ android {
     }
 }
 
+//aspectjx {
+//    enabled true
+//    exclude 'androidx','kotlin','com.google','com.squareup','com.alipay','org.apache'
+//}
 
 dependencies {
-    api 'org.aspectj:aspectjrt:1.9.5'
+//    api 'org.aspectj:aspectjrt:1.9.5'
 
     //ARouter路由
     implementation 'com.alibaba:arouter-api:1.5.0'
-    implementation project(path: ':ui')
     kapt 'com.alibaba:arouter-compiler:1.2.2'
 
-    implementation project(':library')
 
+    implementation project(path: ':ui')
+
+    implementation project(':library')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$rootProject.kotlin_version"
     implementation "androidx.core:core-ktx:$rootProject.coreKtxVersion"
