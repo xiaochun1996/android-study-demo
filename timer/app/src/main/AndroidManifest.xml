@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.jock.main">
+    package="com.jock.a_main">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -12,26 +12,29 @@
         android:supportsRtl="true"
         android:name="com.jock.library.base.BaseApplication"
         android:theme="@style/Theme.Timer">
-        <activity android:name="com.jock.main.MainActivity">
+        <activity android:name="com.jock.a_main.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.jock.main.SecondActivity" />
-        <activity android:name="com.jock.glide.GlideActivity" />
-        <activity android:name="com.jock.route.activity.LoginActivity" />
-        <activity android:name="com.jock.route.activity.InformActivity" />
-        <activity android:name="com.jock.route.activity.RouteHomeActivity" />
-        <activity android:name="com.jock.route.activity.DegradeGlobalActivity" />
-        <activity android:name="com.jock.util.ActivityManagerActivity" />
-        <activity android:name="com.jock.thread.ThreadTest2Activity" />
-        <activity android:name="com.jock.thread.ThreadTest3Activity" />
-        <activity android:name="com.jock.thread.ThreadTest4Activity" />
-        <activity android:name="com.jock.thread.ThreadTest5Activity" />
-        <activity android:name="com.jock.thread.ThreadTest12Activity" />
-        <activity android:name="com.jock.thread.CoroutinesDemoActivity2" />
+        <activity android:name="com.jock.a_main.SecondActivity" />
+        <activity android:name="com.jock.z_glide.GlideActivity" />
+        <activity android:name="com.jock.f_route.activity.LoginActivity" />
+        <activity android:name="com.jock.f_route.activity.InformActivity" />
+        <activity android:name="com.jock.f_route.activity.RouteHomeActivity" />
+        <activity android:name="com.jock.f_route.activity.DegradeGlobalActivity" />
+        <activity android:name="com.jock.f_route.ActivityManagerActivity" />
+        <activity android:name="com.jock.g_thread.Thread2_AsyncTaskActivity" />
+        <activity android:name="com.jock.g_thread.Thread3_ThreadPoolActivity" />
+        <activity android:name="com.jock.g_thread.Thread4_WaitJoinYieldSleepActivity" />
+        <activity android:name="com.jock.g_thread.Thread5_CommunicationActivity" />
+        <activity android:name="com.jock.g_thread.Thread12_ActivityJExcutor" />
+        <activity android:name="com.jock.g_thread.Coroutines2_SimulateActivity" />
+        <activity android:name="com.jock.h_network.Network7_UIActivity" />
+        <activity android:name="com.jock.h_network.Network8_GlideActivity" />
+        <activity android:name="com.jock.i_demo.RestartAppActivity" />
     </application>
 
 </manifest>

@@ -7,14 +7,22 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../../layout/custom_preview.xml" value="0.2777777777777778" />
         <entry key="app/src/main/res/layout/activity_inform.xml" value="0.30434782608695654" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.30434782608695654" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.38179347826086957" />
+        <entry key="app/src/main/res/layout/activity_network7.xml" value="0.3541666666666667" />
+        <entry key="app/src/main/res/layout/activity_network_glide.xml" value="0.37083333333333335" />
         <entry key="app/src/main/res/layout/activity_not_found.xml" value="0.30434782608695654" />
+        <entry key="app/src/main/res/layout/activity_restart.xml" value="0.2554347826086957" />
         <entry key="app/src/main/res/layout/activity_route_home.xml" value="0.30434782608695654" />
         <entry key="app/src/main/res/layout/activity_thread_pool.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_thread_test.xml" value="0.3848958333333333" />
         <entry key="app/src/main/res/layout/layout_global_degrade.xml" value="0.30434782608695654" />
+        <entry key="debugtool/src/main/res/drawable/shape_hi_debug_tool.xml" value="0.2375" />
+        <entry key="debugtool/src/main/res/drawable/shape_hi_debug_tool_divider.xml" value="0.2375" />
+        <entry key="debugtool/src/main/res/layout/debug_tool.xml" value="0.23097826086956522" />
+        <entry key="debugtool/src/main/res/layout/hi_debug_tool_item.xml" value="0.36684782608695654" />
         <entry key="library/src/main/res/layout/hilog_item.xml" value="0.196875" />
       </map>
     </option>

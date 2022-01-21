@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">timer</string>
+    <string name="input_item_hint_user_name">请输入用户名</string>
+    <string name="input_item_title_user_name">用户名</string>
 </resources>

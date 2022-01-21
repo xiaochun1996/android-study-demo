@@ -2,3 +2,4 @@ include ':library'
 include ':app'
 rootProject.name = "timer"
 include ':ui'
+include ':debugtool'

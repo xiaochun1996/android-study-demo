@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--  字体图标  -->
+    <com.jock.ui.view.IconFontTextView
+        android:text="&#xe607;"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Space android:layout_height="20dp"
+        android:layout_width="match_parent"/>
+
+    <!--  输入 item  -->
+    <com.jock.h_network.view.InputItemLayout
+        android:id="@+id/input_item_username"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_48"
+        android:layout_marginTop="@dimen/dp_10"
+        android:background="@color/color_white"
+        android:paddingLeft="@dimen/dp_16"
+        app:bottomLineAppearance="@style/leftMargin_lineAppearance"
+        app:hint="@string/input_item_hint_user_name"
+        app:inputTextAppearance="@style/inputTextAppearance"
+        app:title="@string/input_item_title_user_name"
+        app:titleTextAppearance="@style/titleTextAppearance"
+        app:topLineAppearance="@style/lineAppearance" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
